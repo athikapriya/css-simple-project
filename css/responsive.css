@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px){
+    .content h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .content p{
+        padding: 0.4rem 0rem ;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .content-description{
+        flex-direction: column;
+    }
+    aside{
+        display: flex;
+        gap : 1.5rem;
+    }
+    .content-description .content:first-child {
+        padding-top: 0rem;
+    }
+    aside .side-heading2{
+        line-height: 2rem;
+    }
+    .content p{
+        padding: 0.7rem 0rem ;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul li{
+        padding: 0.5rem 0.65rem;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logo-text h1{
+        font-size: 1.7rem;
+    }
+    .logo-text p{
+        font-size: 0.6rem;
+    }
+    nav ul li{
+        margin: 0px 5px;
+        padding:  0.3rem 0.35rem;
+    }
+    aside{
+       flex-direction: column;
+       gap : 0rem;
+    }
+    
+    .content h2{
+        font-size: 1.3rem;
+    }
+    .content-description p{
+        /* font-size: 0.85rem; */
+        line-height: 1.3rem;
+    }
+    .content ul li{
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .logo-text h1{
+        font-size: 1.5rem;
+    }
+    .logo-text{
+        top : 30px;
+    }
+    nav ul li{
+        margin: 0px 5px;
+        padding:  0.1rem;
+    }
+    .sidebar-item {
+        padding-top: 0rem;
+    }
+    .container{
+        width : 100%;
+    }
+    footer {
+        padding : 1.7rem 0rem;
+    }
+}

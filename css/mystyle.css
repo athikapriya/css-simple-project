@@ -1,0 +1,289 @@
+/* reset code and common code starts here  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* list-style-type: none; */
+    outline: none;
+    /* font-weight: 400; */
+}
+
+html{
+    /* background-color: #fafafa; */
+    scroll-behavior: smooth;
+    /* font-size: 62.5%; */
+    /* font-family: "Roboto", sans-serif; */
+}
+
+body{
+    /* background-color: #fff; */
+    /* width: 100rem; */
+    max-width: 100%;
+    margin : auto;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}  
+
+:root{
+    --primary-color: #4E6B1C;
+    --secondary-color : #dddddd;
+    --tartiary-color : #ffffff;
+    --quaternary-color : #bbbbbb;
+    --transition : 0.4s all;
+    --section-margin: 1.2rem;
+    --font-family : "Open Sans", sans-serif;
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color :var(--tartiary-color);
+}
+
+::marker{
+    color : var(--primary-color);
+}
+.container-fluid{
+    width : 100%
+}
+
+.container{
+    width: 80%;
+    min-width : 80%;
+    margin : 0px auto;
+}
+
+.flexbox{
+    display : flex;
+}
+/* reset code and common code ends here  */
+
+/* header section starts */
+#header-section{
+    background-color: #CCCCCC;
+}
+
+.header-content{
+    background-color: #F5F5F5;
+}
+
+.logo{
+    height : 140px;
+    max-height: 140px;
+    position : relative;
+}
+
+.logo-text{
+    position : absolute;
+    left : 0;
+    top : 25px;
+    padding : 0px 10px;
+    font-family: var(--font-family);
+}
+
+.logo-text h1{
+    font-size: 2.2rem;
+    color : #323232;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
+}
+
+.logo-text h1 span{
+    color : var(--primary-color);
+}
+
+.logo-text h1 span:hover{
+    color :var(--secondary-color);
+}
+
+.logo-text p{
+    color : var(--primary-color);
+    letter-spacing: 0.12rem;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    padding : 6px 0px;
+    list-style-type: none;
+}
+
+nav ul{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li{
+    display: block;
+    margin: 0px 13px;
+    padding: 0.5rem 0.95rem;
+    background-color: var(--quaternary-color);
+    text-align: center;
+    transition: var(--transition);
+}
+
+nav ul li:first-child{
+    background-color: var(--primary-color);
+}
+
+nav ul li:first-child:hover a{
+    color : var(--tartiary-color);
+}
+
+nav ul li a{
+    color : var(--tartiary-color);
+    font-size: 0.8rem;
+    transition : var(--transition);
+    font-weight: 400;
+}
+
+nav ul li:hover{
+    background-color: var(--primary-color);
+}
+
+nav ul li:hover a{
+    color : var(--secondary-color);
+}
+/* header section ends */
+
+/* main section starts */
+main{
+    margin-top: var(--section-margin);
+}
+
+/* banner srection starts */
+.banner-section{
+    height: 180px;
+    width : auto;
+    border: 0.7rem solid var(--secondary-color) ;
+    border-radius: 0.2rem;
+}
+
+.banner{
+    background-image: url(../assets/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    filter: grayscale(80%);
+    transition: var(--transition);
+}
+
+.banner:hover{
+    filter: none;
+}
+
+/* banner section ends */
+
+/* content description starts */
+.content-description{
+    margin-top: var(--section-margin);
+    justify-content: space-between;
+}
+/* content description ends */
+
+/* aside section starts */
+
+.sidebar{
+    border : 2px solid var(--secondary-color);
+    border-radius: 0.4rem;
+    margin-bottom: var(--section-margin);
+}
+
+.sidebar-item{
+    padding : 1rem ;
+}
+
+.content-description h2{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.3rem;
+    color : var(--primary-color);
+    line-height: 2.8rem;
+}
+
+.content-description h3{
+    font-size : 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    color : #000000;
+    line-height: 1.2rem;
+}
+
+.content-description h4{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color :var(--quaternary-color);
+    line-height: 1.2rem;
+}
+
+.content-description p{
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    padding: 0.7rem 0rem 0rem 0rem;
+    letter-spacing : 1rem,
+}
+
+.content-description button{
+    background-color: transparent;
+    border: none;
+    color : var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.80rem;
+}
+
+.content-description ul {
+    padding-left: 1rem;
+    text-transform: capitalize;
+}
+
+.content-description ul li a{
+    line-height: 1.3rem;
+    color : #323232;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+/* aside section ends */
+
+/* article section starts */
+.content-description .content{
+    padding : 1rem 1rem 0rem 1rem;
+}
+
+.content h2{
+    font-size: 1.5rem;
+}
+.content p{
+    font-size: 0.9rem;
+    padding: 0.7rem 0rem ;
+}
+.content p:last-child{
+    padding-bottom: 0rem ;
+}
+
+.content ul li{
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+/* article section ends */
+
+/* main section ends */
+
+/* footer scetion starts */
+footer{
+    margin-top: var(--section-margin);
+    background-color: var(--quaternary-color);
+    justify-content: center;
+    align-items: center;
+    padding : 2rem 0rem;
+    color :#ffffff;
+    transition : var(--transition);
+}
+footer span:hover{
+    color : var(--primary-color);
+}
+/* footer section ends */
